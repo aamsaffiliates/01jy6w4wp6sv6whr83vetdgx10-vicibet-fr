@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicibet Casino - Bonus de Bienvenue 325% jusqu'à 3000€ + 300 Tours Gratuits</title>
+    <meta name="description" content="Rejoignez Vicibet Casino et réclamez votre bonus de bienvenue de 325% jusqu'à 3000€ + 300 tours gratuits + 1 Bonus Crabe. Cashback hebdomadaire 15% jusqu'à 3000€.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Vicibet Casino - Bonus de Bienvenue 325% jusqu'à 3000€ + 300 Tours Gratuits">
+    <meta property="og:description" content="Rejoignez Vicibet Casino et réclamez votre bonus de bienvenue de 325% jusqu'à 3000€ + 300 tours gratuits + 1 Bonus Crabe.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vicibet.ca">
+    <meta property="og:image" content="/images/hero.webp">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'roman-red': '#8B0000',
+                        'roman-gold': '#FFD700',
+                        'roman-bronze': '#CD7F32',
+                        'roman-dark': '#2C1810',
+                        'roman-crimson': '#DC143C'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-roman-dark text-white overflow-x-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-element card-1"><i class="fas fa-coins"></i></div>
+        <div class="floating-element card-2"><i class="fas fa-chess-rook"></i></div>
+        <div class="floating-element card-3"><i class="fas fa-shield-alt"></i></div>
+        <div class="floating-element card-4"><i class="fas fa-dice"></i></div>
+        <div class="floating-element card-5"><i class="fas fa-crown"></i></div>
+        <div class="floating-element card-6"><i class="fas fa-gem"></i></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-roman-dark/95 backdrop-blur-sm z-50 border-b border-roman-red/30">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/">
+                    <img src="images/logo.webp" class="h-16" alt="Site logo" /
+                    </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#hero" class="nav-link">Accueil</a>
+                    <a href="#bonus" class="nav-link">Bonus</a>
+                    <a href="#jeux" class="nav-link">Jeux</a>
+                    <a href="#apropos" class="nav-link">À Propos</a>
+                    <a href="#support" class="nav-link">Support</a>
+                </div>
+                <button class="cta-button-small" onclick="redirectToGo()">
+                    Jouer Maintenant
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-roman-dark via-roman-red/20 to-roman-dark"></div>
+        <div class="absolute inset-0 spotlight-animation"></div>
+        
+        <div class="container mx-auto px-4 z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="p-4 rounded-2xl bg-white/90 mb-6">
+                        <h1 class="text-3xl lg:text-4xl font-bold mb-4 hero-title bg-white">
+                            VICIBET CASINO GLADIATEUR
+                        </h1>
+                        <span class="block text-2xl lg:text-3xl text-roman-bronze">Conquérez la Fortune</span>
+                    </div>
+                    
+                    <div class="bonus-box mb-8">
+                        <div class="bonus-header">
+                            <i class="fas fa-crown"></i>
+                            BONUS DE BIENVENUE
+                        </div>
+                        <div class="bonus-main">
+                            325% jusqu'à 3,000€
+                        </div>
+                        <div class="bonus-extras">
+                            + 300 Tours Gratuits + 1 Bonus Crabe
+                        </div>
+                        <div class="bonus-weekly">
+                            Cashback Hebdomadaire 15% jusqu'à 3,000€
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button class="cta-button-primary" onclick="redirectToGo()">
+                            <i class="fas fa-play mr-2"></i>
+                            RÉCLAMER LE BONUS
+                        </button>
+                        <button class="cta-button-secondary" onclick="redirectToGo()">
+                            <i class="fas fa-gamepad mr-2"></i>
+                            JOUER MAINTENANT
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="hero-image-container">
+                        <img src="images/hero.webp" alt="Vicibet Casino Gladiateur" class="hero-image">
+                        <div class="absolute inset-0 bg-gradient-to-t from-roman-red/30 to-transparent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Claim Bonus -->
+    <section id="bonus" class="py-20 bg-gradient-to-b from-roman-dark to-roman-red/10">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl lg:text-5xl font-bold text-center mb-16 section-title">
+                Comment Réclamer Votre Bonus
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3 class="step-title">1. Inscription</h3>
+                    <p class="step-description">Créez votre compte gladiateur en quelques minutes</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="step-title">2. Dépôt</h3>
+                    <p class="step-description">Effectuez votre premier dépôt minimum de 20€</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 class="step-title">3. Bonus</h3>
+                    <p class="step-description">Recevez automatiquement votre bonus de 325%</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <h3 class="step-title">4. Jouez</h3>
+                    <p class="step-description">Commencez à jouer et gagnez comme un empereur</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Games -->
+    <section id="jeux" class="py-20 bg-roman-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl lg:text-5xl font-bold text-center mb-16 section-title">
+                Jeux de Gladiateurs
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div class="game-card">
+                    <div class="game-image-container">
+                        <img src="images/brainwashed.jpg" alt="Brainwashed" class="game-image">
+                        <div class="game-overlay">
+                            <button class="game-play-btn" onclick="redirectToGo()">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="game-title">Brainwashed</h3>
+                </div>
+                
+                <div class="game-card">
+                    <div class="game-image-container">
+                        <img src="images/gates-of-hades.jpg" alt="Gates of Hades" class="game-image">
+                        <div class="game-overlay">
+                            <button class="game-play-btn" onclick="redirectToGo()">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="game-title">Gates of Hades</h3>
+                </div>
+                
+                <div class="game-card">
+                    <div class="game-image-container">
+                        <img src="images/hotfire.svg" alt="Hotfire" class="game-image">
+                        <div class="game-overlay">
+                            <button class="game-play-btn" onclick="redirectToGo()">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="game-title">40 Mega Hotfire</h3>
+                </div>
+                
+                <div class="game-card">
+                    <div class="game-image-container">
+                        <img src="images/piggy-bank.svg" alt="Break the Piggy Bank" class="game-image">
+                        <div class="game-overlay">
+                            <button class="game-play-btn" onclick="redirectToGo()">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="game-title">Break the Piggy Bank</h3>
+                </div>
+                
+                <div class="game-card">
+                    <div class="game-image-container">
+                        <img src="images/sugarrush.jpg" alt="Sugar Rush 1000" class="game-image">
+                        <div class="game-overlay">
+                            <button class="game-play-btn" onclick="redirectToGo()">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="game-title">Sugar Rush 1000</h3>
+                </div>
+                
+                <div class="game-card">
+                    <div class="game-image-container">
+                        <img src="images/wanted.jpg" alt="Wanted Dead or a Wild" class="game-image">
+                        <div class="game-overlay">
+                            <button class="game-play-btn" onclick="redirectToGo()">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="game-title">Wanted Dead or a Wild</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="py-20 bg-gradient-to-b from-roman-red/10 to-roman-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl lg:text-5xl font-bold text-center mb-16 section-title">
+                L'Empire Vicibet
+            </h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="prose prose-lg text-gray-300 mb-12">
+                    <p class="text-xl leading-relaxed mb-6">
+                        Vicibet Casino s'impose comme l'arène numérique où les gladiateurs modernes viennent défier la fortune. Depuis son lancement, cette plateforme de jeu révolutionnaire a conquis le cœur des joueurs français grâce à son approche unique mêlant tradition romaine et innovation technologique. L'expérience proposée transcende le simple divertissement pour offrir une véritable épopée ludique.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed mb-6">
+                        La philosophie de Vicibet repose sur l'excellence et la grandeur de l'Empire romain. Chaque aspect du casino reflète cette ambition : des graphismes somptueux aux mécaniques de jeu sophistiquées, en passant par un service client digne des plus grands palais impériaux. Les joueurs ne sont pas de simples utilisateurs, mais des citoyens d'un empire du divertissement où chaque session de jeu devient une conquête personnelle.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed mb-6">
+                        L'arsenal ludique de Vicibet comprend plus de 2000 jeux soigneusement sélectionnés, allant des machines à sous classiques aux tables de jeu en direct les plus immersives. Cette diversité garantit que chaque gladiateur trouve son terrain de prédilection, qu'il préfère les stratégies complexes du poker ou l'adrénaline pure des slots à jackpot progressif.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed mb-6">
+                        La sécurité constitue le fondement de l'empire Vicibet. Utilisant les technologies de cryptage les plus avancées et respectant scrupuleusement les réglementations internationales, la plateforme assure une protection maximale des données personnelles et financières. Cette forteresse numérique permet aux joueurs de se concentrer uniquement sur leur plaisir de jeu, l'esprit tranquille.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed">
+                        L'engagement de Vicibet envers ses gladiateurs se manifeste également à travers un programme de fidélité exceptionnel et des promotions régulières qui récompensent la bravoure et la persévérance. Car dans cet empire du jeu, chaque bataille mérite sa récompense, et chaque victoire sa célébration digne des plus grands triomphes romains.
+                    </p>
+                </div>
+                
+                <!-- Game Providers -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold mb-8 text-roman-gold">Fournisseurs de Jeux</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                        <div class="provider-card">NetEnt</div>
+                        <div class="provider-card">Microgaming</div>
+                        <div class="provider-card">Play'n GO</div>
+                        <div class="provider-card">Evolution Gaming</div>
+                        <div class="provider-card">Pragmatic Play</div>
+                        <div class="provider-card">Red Tiger</div>
+                        <div class="provider-card">Big Time Gaming</div>
+                        <div class="provider-card">Yggdrasil</div>
+                        <div class="provider-card">Quickspin</div>
+                        <div class="provider-card">Thunderkick</div>
+                        <div class="provider-card">Push Gaming</div>
+                        <div class="provider-card">Nolimit City</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="py-20 bg-roman-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl lg:text-5xl font-bold text-center mb-16 section-title">
+                Méthodes de Paiement
+            </h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-roman-gold">Dépôts Instantanés</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full payment-table">
+                                <thead>
+                                    <tr>
+                                        <th>Méthode</th>
+                                        <th>Min/Max</th>
+                                        <th>Délai</th>
+                                        <th>Frais</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fab fa-cc-visa mr-2"></i>Visa</td>
+                                        <td>20€ / 5,000€</td>
+                                        <td>Instantané</td>
+                                        <td>Gratuit</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fab fa-cc-mastercard mr-2"></i>Mastercard</td>
+                                        <td>20€ / 5,000€</td>
+                                        <td>Instantané</td>
+                                        <td>Gratuit</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fas fa-university mr-2"></i>Interac</td>
+                                        <td>20€ / 3,000€</td>
+                                        <td>Instantané</td>
+                                        <td>Gratuit</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fab fa-paypal mr-2"></i>PayPal</td>
+                                        <td>10€ / 2,000€</td>
+                                        <td>Instantané</td>
+                                        <td>Gratuit</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fab fa-bitcoin mr-2"></i>Bitcoin</td>
+                                        <td>50€ / 10,000€</td>
+                                        <td>15 min</td>
+                                        <td>Gratuit</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-roman-gold">Retraits Rapides</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full payment-table">
+                                <thead>
+                                    <tr>
+                                        <th>Méthode</th>
+                                        <th>Min/Max</th>
+                                        <th>Délai</th>
+                                        <th>Frais</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fas fa-university mr-2"></i>Virement</td>
+                                        <td>50€ / 5,000€</td>
+                                        <td>1-3 jours</td>
+                                        <td>Gratuit</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fab fa-paypal mr-2"></i>PayPal</td>
+                                        <td>20€ / 2,000€</td>
+                                        <td>24h</td>
+                                        <td>Gratuit</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fas fa-university mr-2"></i>Interac</td>
+                                        <td>20€ / 3,000€</td>
+                                        <td>24h</td>
+                                        <td>Gratuit</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fab fa-bitcoin mr-2"></i>Bitcoin</td>
+                                        <td>50€ / 10,000€</td>
+                                        <td>1h</td>
+                                        <td>Gratuit</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fas fa-money-check mr-2"></i>Chèque</td>
+                                        <td>100€ / 2,500€</td>
+                                        <td>7-14 jours</td>
+                                        <td>25€</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 prose prose-lg text-gray-300">
+                    <p class="text-lg leading-relaxed mb-4">
+                        Vicibet Casino privilégie la simplicité et la rapidité des transactions financières pour ses gladiateurs. L'intégration des méthodes de paiement canadiennes les plus populaires garantit une expérience fluide et sécurisée. Les dépôts sont traités instantanément, permettant aux joueurs de plonger immédiatement dans l'action, tandis que les retraits sont traités avec la même efficacité légendaire des légions romaines.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed mb-4">
+                        La plateforme accepte les principales cartes de crédit et de débit, ainsi que les portefeuilles électroniques populaires au Canada. Pour les joueurs privilégiant l'anonymat et la modernité, les cryptomonnaies offrent une alternative rapide et sécurisée. Chaque transaction bénéficie d'un cryptage de niveau bancaire, assurant une protection maximale des fonds et des informations personnelles.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed">
+                        L'équipe financière de Vicibet traite les demandes de retrait dans les plus brefs délais, avec des vérifications de sécurité rigoureuses mais efficaces. Cette approche équilibrée entre rapidité et sécurité reflète l'engagement du casino envers l'excellence du service client et la satisfaction des joueurs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & VIP -->
+    <section class="py-20 bg-gradient-to-b from-roman-red/10 to-roman-dark">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8 section-title">Sécurité Impériale</h2>
+                    <div class="security-features">
+                        <div class="security-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Cryptage SSL 256-bit</h4>
+                                <p>Protection maximale des données</p>
+                            </div>
+                        </div>
+                        <div class="security-item">
+                            <i class="fas fa-user-shield"></i>
+                            <div>
+                                <h4>Vérification d'identité</h4>
+                                <p>Processus KYC rigoureux</p>
+                            </div>
+                        </div>
+                        <div class="security-item">
+                            <i class="fas fa-lock"></i>
+                            <div>
+                                <h4>Jeu responsable</h4>
+                                <p>Outils de contrôle avancés</p>
+                            </div>
+                        </div>
+                        <div class="security-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>Licence officielle</h4>
+                                <p>Régulé et audité</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="text-4xl font-bold mb-8 section-title">Programme VIP</h2>
+                    <div class="vip-levels">
+                        <div class="vip-level bronze">
+                            <i class="fas fa-medal"></i>
+                            <h4>Bronze</h4>
+                            <p>Cashback 5% • Support prioritaire</p>
+                        </div>
+                        <div class="vip-level silver">
+                            <i class="fas fa-trophy"></i>
+                            <h4>Argent</h4>
+                            <p>Cashback 8% • Bonus personnalisés</p>
+                        </div>
+                        <div class="vip-level gold">
+                            <i class="fas fa-crown"></i>
+                            <h4>Or</h4>
+                            <p>Cashback 12% • Gestionnaire dédié</p>
+                        </div>
+                        <div class="vip-level diamond">
+                            <i class="fas fa-gem"></i>
+                            <h4>Diamant</h4>
+                            <p>Cashback 15% • Événements exclusifs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 prose prose-lg text-gray-300">
+                <p class="text-lg leading-relaxed mb-4">
+                    La sécurité de Vicibet Casino repose sur des fondations aussi solides que les murailles de Rome. Chaque transaction, chaque donnée personnelle et chaque session de jeu bénéficient d'une protection de niveau militaire grâce aux technologies de cryptage les plus avancées. Cette forteresse numérique garantit que les gladiateurs peuvent se concentrer uniquement sur leurs conquêtes ludiques.
+                </p>
+                
+                <p class="text-lg leading-relaxed mb-4">
+                    Le programme VIP de Vicibet transforme chaque joueur fidèle en véritable patricien de l'empire du jeu. Plus qu'un simple système de récompenses, il s'agit d'une reconnaissance de la loyauté et de l'engagement des membres les plus dévoués. Chaque niveau débloque des privilèges exclusifs, des bonus personnalisés et un service client d'exception digne des plus grands empereurs.
+                </p>
+                
+                <p class="text-lg leading-relaxed">
+                    L'ascension dans les rangs VIP s'effectue naturellement à travers le jeu régulier, récompensant ainsi la persévérance et la passion. Les membres Diamant bénéficient d'avantages extraordinaires incluant des invitations à des événements exclusifs, des cadeaux personnalisés et un gestionnaire de compte dédié disponible 24h/24. Cette approche personnalisée reflète l'engagement de Vicibet envers l'excellence du service client.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonuses Review -->
+    <section class="py-20 bg-roman-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl lg:text-5xl font-bold text-center mb-16 section-title">
+                Arsenal de Bonus
+            </h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="prose prose-lg text-gray-300 mb-12">
+                    <p class="text-xl leading-relaxed mb-6">
+                        L'empire Vicibet déploie un arsenal de bonus aussi impressionnant que les légions romaines. Chaque promotion est conçue pour maximiser les chances de victoire des gladiateurs, transformant chaque dépôt en opportunité de conquête. Cette stratégie généreuse reflète la philosophie du casino : récompenser la bravoure et encourager l'audace.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed mb-8">
+                        Le bonus de bienvenue constitue la pièce maîtresse de cette offensive promotionnelle. Avec ses 325% jusqu'à 3,000€, accompagnés de 300 tours gratuits et d'un Bonus Crabe exclusif, il surpasse largement les offres de la concurrence. Cette générosité exceptionnelle permet aux nouveaux gladiateurs de commencer leur aventure avec un avantage considérable, multipliant leurs chances de remporter des victoires mémorables.
+                    </p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-12 mb-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-roman-gold">Types de Bonus</h3>
+                        <ul class="bonus-list">
+                            <li><i class="fas fa-gift"></i>Bonus de bienvenue 325% jusqu'à 3,000€</li>
+                            <li><i class="fas fa-sync-alt"></i>Cashback hebdomadaire 15% jusqu'à 3,000€</li>
+                            <li><i class="fas fa-calendar-day"></i>Bonus quotidiens personnalisés</li>
+                            <li><i class="fas fa-users"></i>Bonus de parrainage 100€</li>
+                            <li><i class="fas fa-birthday-cake"></i>Bonus anniversaire exclusif</li>
+                            <li><i class="fas fa-trophy"></i>Tournois avec prix garantis</li>
+                            <li><i class="fas fa-star"></i>Tours gratuits sans dépôt</li>
+                            <li><i class="fas fa-crown"></i>Bonus VIP personnalisés</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-roman-gold">Conditions de Mise</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full bonus-table">
+                                <thead>
+                                    <tr>
+                                        <th>Type de Bonus</th>
+                                        <th>Mise Requise</th>
+                                        <th>Contribution</th>
+                                        <th>Durée</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bonus de bienvenue</td>
+                                        <td>35x</td>
+                                        <td>100%</td>
+                                        <td>30 jours</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tours gratuits</td>
+                                        <td>25x</td>
+                                        <td>100%</td>
+                                        <td>7 jours</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cashback</td>
+                                        <td>1x</td>
+                                        <td>100%</td>
+                                        <td>7 jours</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bonus sans dépôt</td>
+                                        <td>50x</td>
+                                        <td>100%</td>
+                                        <td>14 jours</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="prose prose-lg text-gray-300">
+                    <p class="text-lg leading-relaxed mb-4">
+                        La structure des bonus de Vicibet privilégie l'équité et la transparence. Les conditions de mise restent raisonnables, permettant aux joueurs de transformer réellement leurs bonus en gains retirables. Cette approche honnête distingue Vicibet des casinos moins scrupuleux qui proposent des bonus attractifs mais impossibles à débloquer.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed mb-4">
+                        Le système de cashback hebdomadaire représente une innovation particulièrement appréciée des gladiateurs réguliers. Contrairement aux bonus traditionnels, le cashback ne comporte aucune condition de mise complexe, offrant une véritable assurance contre les périodes moins favorables. Cette sécurité financière encourage les joueurs à explorer de nouveaux jeux sans crainte.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed">
+                        Les promotions saisonnières et les tournois réguliers complètent cet arsenal promotionnel, créant un calendrier d'événements qui maintient l'excitation tout au long de l'année. Chaque gladiateur trouve ainsi des opportunités adaptées à son style de jeu et à ses préférences, transformant chaque visite en potentielle célébration de victoire.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Support -->
+    <section id="support" class="py-20 bg-gradient-to-b from-roman-red/10 to-roman-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl lg:text-5xl font-bold text-center mb-16 section-title">
+                Support des Centurions
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Chat en Direct</h3>
+                    <p>Disponible 24h/24, 7j/7</p>
+                    <p class="text-roman-gold">Réponse instantanée</p>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Support</h3>
+                    <p>support@vicibet.ca</p>
+                    <p class="text-roman-gold">Réponse sous 2h</p>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Téléphone</h3>
+                    <p>+1 (800) 123-4567</p>
+                    <p class="text-roman-gold">Lun-Dim 8h-24h</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Promotions -->
+    <section class="py-20 bg-roman-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl lg:text-5xl font-bold text-center mb-16 section-title">
+                Autres Conquêtes
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="promo-card">
+                    <div class="promo-icon">
+                        <i class="fas fa-calendar-week"></i>
+                    </div>
+                    <h3>Lundi Gladiateur</h3>
+                    <p>Commencez la semaine avec 50% de bonus jusqu'à 500€ sur votre premier dépôt du lundi. Parfait pour relancer vos conquêtes après le weekend.</p>
+                    <button class="promo-btn" onclick="redirectToGo()">Réclamer</button>
+                </div>
+                
+                <div class="promo-card">
+                    <div class="promo-icon">
+                        <i class="fas fa-dice"></i>
+                    </div>
+                    <h3>Mercredi Mystère</h3>
+                    <p>Chaque mercredi, découvrez une surprise exclusive : tours gratuits, bonus cashback ou prix mystère. L'aventure vous attend au milieu de la semaine.</p>
+                    <button class="promo-btn" onclick="redirectToGo()">Découvrir</button>
+                </div>
+                
+                <div class="promo-card">
+                    <div class="promo-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Weekend Impérial</h3>
+                    <p>Célébrez le weekend comme un empereur avec des bonus exclusifs, des tournois spéciaux et des prix exceptionnels réservés aux gladiateurs du weekend.</p>
+                    <button class="promo-btn" onclick="redirectToGo()">Participer</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Feature - Bonus Crab -->
+    <section class="py-20 bg-gradient-to-b from-roman-red/20 to-roman-dark">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-8 section-title">
+                    Le Crabe Bonus Légendaire
+                </h2>
+                
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="text-left">
+                        <p class="text-xl leading-relaxed mb-6">
+                            Découvrez la créature mythique de Vicibet : le Crabe Bonus. Cette fonctionnalité exclusive transforme votre expérience de jeu en véritable chasse au trésor. Apparaissant de manière aléatoire durant vos sessions, le Crabe Bonus débloque des récompenses extraordinaires.
+                        </p>
+                        
+                        <div class="feature-list mb-8">
+                            <div class="feature-item">
+                                <i class="fas fa-star"></i>
+                                <span>Multiplicateurs jusqu'à x50</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-coins"></i>
+                                <span>Bonus instantanés jusqu'à 1,000€</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-sync-alt"></i>
+                                <span>Tours gratuits supplémentaires</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-gift"></i>
+                                <span>Accès aux jeux VIP exclusifs</span>
+                            </div>
+                        </div>
+                        
+                        <button class="cta-button-primary" onclick="redirectToGo()">
+                            <i class="fas fa-play mr-2"></i>
+                            Chasser le Crabe
+                        </button>
+                    </div>
+                    
+                    <div class="relative">
+                        <div class="bonus-crab-container">
+                            <img src="images/bonus-crab.webp" alt="Bonus Crab Vicibet" class="bonus-crab-image">
+                            <div class="absolute inset-0 bg-gradient-to-t from-roman-red/30 to-transparent rounded-lg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-16 bg-roman-dark border-t border-roman-red/30">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-8">
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>SSL Sécurisé</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-certificate"></i>
+                    <span>Licence Officielle</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-user-shield"></i>
+                    <span>Jeu Responsable</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-clock"></i>
+                    <span>Paiements Rapides</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-headset"></i>
+                    <span>Support 24/7</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-gradient-to-b from-roman-red/10 to-roman-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl lg:text-5xl font-bold text-center mb-16 section-title">
+                Questions des Gladiateurs
+            </h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Comment réclamer le bonus de bienvenue de 325% ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pour réclamer votre bonus de bienvenue, inscrivez-vous sur Vicibet, effectuez un dépôt minimum de 20€, et le bonus sera automatiquement crédité sur votre compte. Les 300 tours gratuits et le Bonus Crabe sont également activés instantanément.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quels sont les délais de retrait sur Vicibet ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Les retraits sont traités rapidement : 24h pour les portefeuilles électroniques, 1-3 jours pour les virements bancaires, et 1h pour les cryptomonnaies. Les premiers retraits peuvent nécessiter une vérification d'identité.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Le casino est-il sécurisé et licencié ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolument. Vicibet utilise un cryptage SSL 256-bit, possède une licence officielle de jeu, et subit des audits réguliers. Toutes les transactions et données personnelles sont protégées selon les standards les plus élevés de l'industrie.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Comment fonctionne le programme VIP ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Le programme VIP comporte 4 niveaux (Bronze, Argent, Or, Diamant) avec des avantages croissants : cashback amélioré, bonus personnalisés, gestionnaire dédié, et événements exclusifs. La progression s'effectue automatiquement selon votre activité de jeu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-roman-dark border-t border-roman-red/30 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="text-2xl font-bold text-roman-gold mb-4">
+                        <i class="fas fa-crown mr-2"></i>VICIBET
+                    </div>
+                    <p class="text-gray-400 mb-4">L'empire du jeu où chaque gladiateur trouve sa fortune.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-roman-gold font-bold mb-4">Jeux</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-roman-gold transition-colors">Machines à Sous</a></li>
+                        <li><a href="#" class="hover:text-roman-gold transition-colors">Jeux de Table</a></li>
+                        <li><a href="#" class="hover:text-roman-gold transition-colors">Casino en Direct</a></li>
+                        <li><a href="#" class="hover:text-roman-gold transition-colors">Jackpots</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-roman-gold font-bold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-roman-gold transition-colors">Centre d'Aide</a></li>
+                        <li><a href="#" class="hover:text-roman-gold transition-colors">Chat en Direct</a></li>
+                        <li><a href="#" class="hover:text-roman-gold transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-roman-gold transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-roman-gold font-bold mb-4">Légal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-roman-gold transition-colors">Conditions d'Utilisation</a></li>
+                        <li><a href="#" class="hover:text-roman-gold transition-colors">Politique de Confidentialité</a></li>
+                        <li><a href="#" class="hover:text-roman-gold transition-colors">Jeu Responsable</a></li>
+                        <li><a href="#" class="hover:text-roman-gold transition-colors">Licences</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-roman-red/30 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">
+                        © 2025 Vicibet Casino. Tous droits réservés.
+                    </p>
+                    <div class="flex items-center space-x-4 text-sm text-gray-400">
+                        <div class="flex items-center">
+                            <i class="fas fa-exclamation-triangle mr-2 text-roman-gold"></i>
+                            <span>Jeu responsable</span>
+                        </div>
+                        <span>|</span>
+                        <span>18+ seulement</span>
+                        <span>|</span>
+                        <span>Conditions de mise s'appliquent</span>
+                    </div>
+                </div>
+                
+                <div class="mt-6 text-center text-sm text-gray-500">
+                    <p class="mb-2">
+                        <strong>Avertissement :</strong> Les conditions de mise s'appliquent à tous les bonus. 
+                        Bonus de bienvenue : mise 35x (bonus + dépôt). Tours gratuits : mise 25x des gains. 
+                        Contribution des jeux variable. Voir conditions complètes.
+                    </p>
+                    <p>
+                        Pour obtenir de l'aide concernant le jeu problématique, contactez : 
+                        <a href="tel:1-866-531-2600" class="text-roman-gold hover:underline">1-866-531-2600</a> ou 
+                        <a href="https://www.responsiblegambling.org" class="text-roman-gold hover:underline">responsiblegambling.org</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const icon = this.querySelector('i');
+                
+                faqItem.classList.toggle('active');
+                
+                if (faqItem.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    answer.style.maxHeight = '0';
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // Redirect function for all CTA buttons
+        function redirectToGo() {
+            window.location.href = '/go';
+        }
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.spotlight-animation');
+            if (parallax) {
+                const speed = scrolled * 0.5;
+                parallax.style.transform = `translateY(${speed}px)`;
+            }
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
