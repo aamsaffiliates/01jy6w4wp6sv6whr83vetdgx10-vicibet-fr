@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machines à Sous Vicibet - Thèmes et Sélections</title>
+    <meta name="description" content="Découvrez la sélection de machines à sous Vicibet : jeux en vedette, slots Empire Romain, Megaways et Cluster Pays.">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'roman-red': '#8B0000',
+                        'roman-gold': '#FFD700',
+                        'roman-bronze': '#CD7F32',
+                        'roman-dark': '#2C1810',
+                        'roman-crimson': '#DC143C'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-roman-dark text-white overflow-x-hidden">
+    <!-- Header -->
+    <!-- ...existing code for header (copy from index.html)... -->
+    <nav class="fixed top-0 w-full bg-roman-dark/95 backdrop-blur-sm z-50 border-b border-roman-red/30">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center">
+                    <img src="images/logo.webp" class="h-16" alt="Site logo" />
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html#hero" class="nav-link">Accueil</a>
+                    <a href="slots.html" class="nav-link">Machines à Sous</a>
+                    <a href="about.html" class="nav-link">À Propos</a>
+                    <a href="login.html" class="nav-link">Connexion</a>
+                    <a href="privacy.html" class="nav-link">Confidentialité</a>
+                    <a href="index.html#support" class="nav-link">Support</a>
+                </div>
+                <button class="cta-button-small" onclick="redirectToGo()">
+                    Jouer Maintenant
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-32 pb-16 min-h-screen">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl lg:text-5xl font-bold text-center mb-12 section-title">Machines à Sous Vicibet</h1>
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold mb-4 text-roman-gold">En Vedette</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="slot-card"><img src="images/brainwashed.jpg" alt="Brainwashed" class="slot-img"><div class="slot-title">Brainwashed</div></div>
+                    <div class="slot-card"><img src="images/gates-of-hades.jpg" alt="Gates of Hades" class="slot-img"><div class="slot-title">Gates of Hades</div></div>
+                    <div class="slot-card"><img src="images/sugarrush.jpg" alt="Sugar Rush 1000" class="slot-img"><div class="slot-title">Sugar Rush 1000</div></div>
+                    <div class="slot-card"><img src="images/wanted.jpg" alt="Wanted Dead or a Wild" class="slot-img"><div class="slot-title">Wanted Dead or a Wild</div></div>
+                </div>
+            </div>
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold mb-4 text-roman-gold">Empire Romain</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="slot-card"><img src="images/bonus-crab.webp" alt="Flame and Fortune" class="slot-img"><div class="slot-title">Flame and Fortune</div></div>
+                    <div class="slot-card"><img src="images/hero.webp" alt="Gladiator's Arena" class="slot-img"><div class="slot-title">Gladiator's Arena</div></div>
+                    <div class="slot-card"><img src="images/bonus-crab.webp" alt="Crab of Rome" class="slot-img"><div class="slot-title">Crab of Rome</div></div>
+                    <div class="slot-card"><img src="images/logo.webp" alt="Roman Riches" class="slot-img"><div class="slot-title">Roman Riches</div></div>
+                </div>
+            </div>
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold mb-4 text-roman-gold">Megaways</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="slot-card"><img src="images/piggy-bank.svg" alt="Piggy Bank Megaways" class="slot-img"><div class="slot-title">Piggy Bank Megaways</div></div>
+                    <div class="slot-card"><img src="images/brainwashed.jpg" alt="Brainwashed Megaways" class="slot-img"><div class="slot-title">Brainwashed Megaways</div></div>
+                    <div class="slot-card"><img src="images/gates-of-hades.jpg" alt="Hades Megaways" class="slot-img"><div class="slot-title">Hades Megaways</div></div>
+                    <div class="slot-card"><img src="images/sugarrush.jpg" alt="Sugar Rush Megaways" class="slot-img"><div class="slot-title">Sugar Rush Megaways</div></div>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold mb-4 text-roman-gold">Cluster Pays</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="slot-card"><img src="images/sugarrush.jpg" alt="Sugar Rush Cluster" class="slot-img"><div class="slot-title">Sugar Rush Cluster</div></div>
+                    <div class="slot-card"><img src="images/hero.webp" alt="Arena Cluster" class="slot-img"><div class="slot-title">Arena Cluster</div></div>
+                    <div class="slot-card"><img src="images/bonus-crab.webp" alt="Crab Cluster" class="slot-img"><div class="slot-title">Crab Cluster</div></div>
+                    <div class="slot-card"><img src="images/wanted.jpg" alt="Wanted Cluster" class="slot-img"><div class="slot-title">Wanted Cluster</div></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <!-- ...existing code for footer (copy from index.html)... -->
+    <footer class="bg-roman-dark border-t border-roman-red/30 py-12 mt-16">
+        <!-- ...footer content copied from index.html... -->
+    </footer>
+    <script>
+        function redirectToGo() {
+            window.location.href = '/go';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité Vicibet</title>
+    <meta name="description" content="Politique de confidentialité de Vicibet Casino. Découvrez comment vos données sont protégées et utilisées.">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'roman-red': '#8B0000',
+                        'roman-gold': '#FFD700',
+                        'roman-bronze': '#CD7F32',
+                        'roman-dark': '#2C1810',
+                        'roman-crimson': '#DC143C'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-roman-dark text-white overflow-x-hidden">
+    <!-- Header -->
+    <nav class="fixed top-0 w-full bg-roman-dark/95 backdrop-blur-sm z-50 border-b border-roman-red/30">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center">
+                    <img src="images/logo.webp" class="h-16" alt="Site logo" />
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html#hero" class="nav-link">Accueil</a>
+                    <a href="slots.html" class="nav-link">Machines à Sous</a>
+                    <a href="about.html" class="nav-link">À Propos</a>
+                    <a href="login.html" class="nav-link">Connexion</a>
+                    <a href="privacy.html" class="nav-link">Confidentialité</a>
+                    <a href="index.html#support" class="nav-link">Support</a>
+                </div>
+                <button class="cta-button-small" onclick="redirectToGo()">
+                    Jouer Maintenant
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-32 pb-16 min-h-screen">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h1 class="text-4xl lg:text-5xl font-bold text-center mb-12 section-title">Politique de Confidentialité</h1>
+            <div class="prose prose-lg text-gray-300 mb-8">
+                <p>Chez Vicibet Casino, la protection de vos données personnelles est une priorité absolue. Nous utilisons des technologies de cryptage avancées et respectons les réglementations internationales pour garantir la sécurité de vos informations.</p>
+                <h2>Collecte des données</h2>
+                <p>Nous collectons uniquement les données nécessaires à la création de votre compte, à la gestion de vos transactions et à l'amélioration de nos services.</p>
+                <h2>Utilisation des données</h2>
+                <p>Vos données sont utilisées pour :</p>
+                <ul>
+                    <li>Gérer votre compte et vos transactions</li>
+                    <li>Vous informer sur les promotions et nouveautés</li>
+                    <li>Respecter les obligations légales et réglementaires</li>
+                </ul>
+                <h2>Partage des données</h2>
+                <p>Nous ne partageons jamais vos données avec des tiers non autorisés. Seuls les partenaires nécessaires au fonctionnement du casino (paiement, sécurité) y ont accès, dans le respect de la confidentialité.</p>
+                <h2>Vos droits</h2>
+                <p>Vous pouvez à tout moment demander l'accès, la modification ou la suppression de vos données personnelles en contactant notre support.</p>
+                <h2>Sécurité</h2>
+                <p>Toutes les transactions sont protégées par un cryptage SSL 256-bit. Nous mettons en place des mesures strictes pour prévenir tout accès non autorisé.</p>
+                <h2>Contact</h2>
+                <p>Pour toute question concernant la confidentialité, contactez-nous à <a href="mailto:support@vicibet.com" class="text-roman-gold">support@vicibet.com</a>.</p>
+            </div>
+            <div class="text-center">
+                <a href="index.html#hero" class="cta-button-primary"><i class="fas fa-arrow-left mr-2"></i>Retour à <span class="text-roman-gold font-bold">Vicibet</span></a>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-roman-dark border-t border-roman-red/30 py-12 mt-16">
+        <!-- ...footer content copied from index.html... -->
+    </footer>
+    <script>
+        function redirectToGo() {
+            window.location.href = '/go';
+        }
+    </script>
+</body>
+</html>

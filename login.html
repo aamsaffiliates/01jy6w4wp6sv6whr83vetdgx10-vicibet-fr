@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion Vicibet France - S'inscrire, Se Connecter, Bonus</title>
+    <meta name="description" content="Comment s'inscrire, se connecter et réclamer le bonus de bienvenue sur Vicibet Casino en France. FAQ et guide rapide.">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'roman-red': '#8B0000',
+                        'roman-gold': '#FFD700',
+                        'roman-bronze': '#CD7F32',
+                        'roman-dark': '#2C1810',
+                        'roman-crimson': '#DC143C'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-roman-dark text-white overflow-x-hidden">
+    <!-- Header -->
+    <nav class="fixed top-0 w-full bg-roman-dark/95 backdrop-blur-sm z-50 border-b border-roman-red/30">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center">
+                    <img src="images/logo.webp" class="h-16" alt="Site logo" />
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html#hero" class="nav-link">Accueil</a>
+                    <a href="slots.html" class="nav-link">Machines à Sous</a>
+                    <a href="about.html" class="nav-link">À Propos</a>
+                    <a href="login.html" class="nav-link">Connexion</a>
+                    <a href="privacy.html" class="nav-link">Confidentialité</a>
+                    <a href="index.html#support" class="nav-link">Support</a>
+                </div>
+                <button class="cta-button-small" onclick="redirectToGo()">
+                    Jouer Maintenant
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-32 pb-16 min-h-screen">
+        <div class="container mx-auto px-4 max-w-2xl">
+            <h1 class="text-4xl lg:text-5xl font-bold text-center mb-12 section-title">Connexion Vicibet France</h1>
+            <div class="mb-8 prose prose-lg text-gray-300">
+                <p>Pour profiter de tous les avantages de Vicibet Casino en France, suivez ces étapes simples :</p>
+                <ol>
+                    <li><strong>Inscription :</strong> Cliquez sur "Jouer Maintenant" ou "S'inscrire" et remplissez le formulaire avec vos informations.</li>
+                    <li><strong>Connexion :</strong> Utilisez votre email et mot de passe pour accéder à votre compte.</li>
+                    <li><strong>Réclamer le bonus :</strong> Effectuez un dépôt minimum de 20€ pour activer le bonus de bienvenue (325% + 300 tours gratuits + Bonus Crabe).</li>
+                    <li><strong>Profiter :</strong> Jouez à vos jeux préférés et profitez des promotions exclusives.</li>
+                </ol>
+            </div>
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold mb-4 text-roman-gold">FAQ Connexion & Bonus</h2>
+                <div class="faq-item">
+                    <div class="faq-question"><h3>Comment créer un compte Vicibet ?</h3><i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Rendez-vous sur la page d'inscription, remplissez le formulaire et validez votre email.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><h3>Comment se connecter ?</h3><i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Utilisez l'email et le mot de passe choisis lors de l'inscription.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><h3>Comment réclamer le bonus de bienvenue ?</h3><i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Après votre premier dépôt, le bonus est crédité automatiquement sur votre compte.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><h3>Le bonus est-il disponible en France ?</h3><i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Oui, tous les nouveaux joueurs en France peuvent bénéficier du bonus de bienvenue Vicibet.</p></div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="index.html#hero" class="cta-button-primary"><i class="fas fa-arrow-left mr-2"></i>Retour à <span class="text-roman-gold font-bold">Vicibet</span></a>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-roman-dark border-t border-roman-red/30 py-12 mt-16">
+        <!-- ...footer content copied from index.html... -->
+    </footer>
+    <script>
+        // FAQ toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.faq-question').forEach(question => {
+                question.addEventListener('click', function() {
+                    const faqItem = this.parentElement;
+                    const answer = faqItem.querySelector('.faq-answer');
+                    const icon = this.querySelector('i');
+                    faqItem.classList.toggle('active');
+                    if (faqItem.classList.contains('active')) {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.style.transform = 'rotate(180deg)';
+                    } else {
+                        answer.style.maxHeight = '0';
+                        icon.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+        });
+        function redirectToGo() {
+            window.location.href = '/go';
+        }
+    </script>
+</body>
+</html>

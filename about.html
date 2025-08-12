@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos de Vicibet Casino</title>
+    <meta name="description" content="Découvrez l'histoire, la licence et le propriétaire de Vicibet Casino. Toutes les informations sur l'empire du jeu en ligne.">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'roman-red': '#8B0000',
+                        'roman-gold': '#FFD700',
+                        'roman-bronze': '#CD7F32',
+                        'roman-dark': '#2C1810',
+                        'roman-crimson': '#DC143C'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-roman-dark text-white overflow-x-hidden">
+    <!-- Header -->
+    <nav class="fixed top-0 w-full bg-roman-dark/95 backdrop-blur-sm z-50 border-b border-roman-red/30">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center">
+                    <img src="images/logo.webp" class="h-16" alt="Site logo" />
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html#hero" class="nav-link">Accueil</a>
+                    <a href="slots.html" class="nav-link">Machines à Sous</a>
+                    <a href="about.html" class="nav-link">À Propos</a>
+                    <a href="login.html" class="nav-link">Connexion</a>
+                    <a href="privacy.html" class="nav-link">Confidentialité</a>
+                    <a href="index.html#support" class="nav-link">Support</a>
+                </div>
+                <button class="cta-button-small" onclick="redirectToGo()">
+                    Jouer Maintenant
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-32 pb-16 min-h-screen">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h1 class="text-4xl lg:text-5xl font-bold text-center mb-12 section-title">À Propos de Vicibet Casino</h1>
+            <p class="text-lg leading-relaxed mb-8 text-gray-300">
+                <a href="/" class="nav-link">Vicibet</a> est l'arène numérique où les gladiateurs modernes viennent défier la fortune. Depuis son lancement, la plateforme a conquis le cœur des joueurs français grâce à son approche unique mêlant tradition romaine et innovation technologique. L'expérience proposée transcende le simple divertissement pour offrir une véritable épopée ludique.
+            </p>
+            <table class="w-full mb-12 about-table">
+                <tbody>
+                    <tr><th class="text-left">Nom du Casino</th><td>Vicibet Casino</td></tr>
+                    <tr><th class="text-left">Licence</th><td>Licence officielle de jeu, audits réguliers</td></tr>
+                    <tr><th class="text-left">Propriétaire</th><td>Vicibet Group</td></tr>
+                    <tr><th class="text-left">Langue</th><td>Français</td></tr>
+                    <tr><th class="text-left">Nombre de jeux</th><td>2000+</td></tr>
+                    <tr><th class="text-left">Support</th><td>24/7 Chat, Email, Téléphone</td></tr>
+                </tbody>
+            </table>
+            <div class="prose prose-lg text-gray-300 mb-8">
+                <p>
+                    La philosophie de Vicibet repose sur l'excellence et la grandeur de l'Empire romain. Chaque aspect du casino reflète cette ambition : des graphismes somptueux aux mécaniques de jeu sophistiquées, en passant par un service client digne des plus grands palais impériaux. Les joueurs ne sont pas de simples utilisateurs, mais des citoyens d'un empire du divertissement où chaque session de jeu devient une conquête personnelle.
+                </p>
+                <p>
+                    La sécurité constitue le fondement de l'empire Vicibet. Utilisant les technologies de cryptage les plus avancées et respectant scrupuleusement les réglementations internationales, la plateforme assure une protection maximale des données personnelles et financières.
+                </p>
+            </div>
+            <div class="text-center">
+                <a href="index.html#hero" class="cta-button-primary"><i class="fas fa-arrow-left mr-2"></i>Retour à <span class="text-roman-gold font-bold">Vicibet</span></a>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-roman-dark border-t border-roman-red/30 py-12 mt-16">
+        <!-- ...footer content copied from index.html... -->
+    </footer>
+    <script>
+        function redirectToGo() {
+            window.location.href = '/go';
+        }
+    </script>
+</body>
+</html>
