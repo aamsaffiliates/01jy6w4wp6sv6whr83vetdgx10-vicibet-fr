@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicibet Casino Store</title>
+    <meta name="description" content="Boutique Vicibet Casino : achetez des bonus, tours gratuits, paris gratuits et pièces de casino pour vos exploits.">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Store Page CSS -->
+    <link rel="stylesheet" href="store.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'roman-red': '#8B0000',
+                        'roman-gold': '#FFD700',
+                        'roman-bronze': '#CD7F32',
+                        'roman-dark': '#2C1810',
+                        'roman-crimson': '#DC143C'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-roman-dark text-white overflow-x-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-element card-1"><i class="fas fa-coins"></i></div>
+        <div class="floating-element card-2"><i class="fas fa-chess-rook"></i></div>
+        <div class="floating-element card-3"><i class="fas fa-shield-alt"></i></div>
+        <div class="floating-element card-4"><i class="fas fa-dice"></i></div>
+        <div class="floating-element card-5"><i class="fas fa-crown"></i></div>
+        <div class="floating-element card-6"><i class="fas fa-gem"></i></div>
+    </div>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-roman-dark/95 backdrop-blur-sm z-50 border-b border-roman-red/30">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center">
+                    <img src="images/logo.webp" class="h-16" alt="Site logo" />
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html#hero" class="nav-link">Accueil</a>
+                    <a href="slots.html" class="nav-link">Machines à Sous</a>
+                    <a href="about.html" class="nav-link">À Propos</a>
+                    <a href="login.html" class="nav-link">Connexion</a>
+                    <a href="privacy.html" class="nav-link">Confidentialité</a>
+                    <a href="store.html" class="nav-link active">Casino Store</a>
+                    <a href="index.html#support" class="nav-link">Support</a>
+                </div>
+                <button class="cta-button-small" onclick="redirectToGo()">
+                    Jouer Maintenant
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-32 pb-16 min-h-screen">
+    <div class="store-container bg-white text-roman-dark rounded-2xl shadow-lg max-w-3xl mx-auto p-8">
+        <div class="store-title">Vicibet Casino Store</div>
+        <div class="store-desc">
+            Welcome to the <a href="/" class="text-orange-800 hover:underline">Vicibet</a> Store! Here you can purchase exclusive bonuses and rewards using your casino coins or real money. Complete achievements to earn more coins and unlock special offers. Enjoy your gaming experience with extra spins, free bets, and more!
+        </div>
+        <table class="store-table">
+            <thead>
+                <tr>
+                    <th>Addon</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>20 Free Spins – Book of Dead</td>
+                    <td>Get 20 free spins on Book of Dead slot. Wagering: 20x. Min bet: €0.5.</td>
+                    <td>100 Coins</td>
+                    <td><button class="addon-btn">Buy</button></td>
+                </tr>
+                <tr>
+                    <td>10 Free Spins – Gates of Hades</td>
+                    <td>Enjoy 10 free spins on Gates of Hades. Wagering: 15x. Min bet: €0.4.</td>
+                    <td>70 Coins</td>
+                    <td><button class="addon-btn">Buy</button></td>
+                </tr>
+                <tr>
+                    <td>€5 Free Bet</td>
+                    <td>Place a free €5 bet on any casino game. Wagering: 10x.</td>
+                    <td>120 Coins</td>
+                    <td><button class="addon-btn">Buy</button></td>
+                </tr>
+                <tr>
+                    <td>€10 Free Bet</td>
+                    <td>Place a free €10 bet on any casino game. Wagering: 15x.</td>
+                    <td>200 Coins</td>
+                    <td><button class="addon-btn">Buy</button></td>
+                </tr>
+                <tr>
+                    <td>50 Casino Coins</td>
+                    <td>Buy 50 casino coins to unlock more bonuses and rewards.</td>
+                    <td>€5</td>
+                    <td><button class="addon-btn">Buy</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <strong>How to earn casino coins?</strong>
+            <ul class="achievements-list">
+                <li>Spin Book of Dead 50 times with min bet €0.5</li>
+                <li>Play 5 different Pragmatic slots in a week</li>
+                <li>Login to the casino each day of the week</li>
+                <li>Win 3 bonuses in a single day</li>
+                <li>Refer a friend who makes a deposit</li>
+            </ul>
+        </div>
+        <div class="faq-section">
+            <div class="faq-title">FAQ</div>
+            <ul class="faq-list" id="faqList">
+                <li>
+                    <div class="faq-question">How do I use casino coins?</div>
+                    <div class="faq-answer">Casino coins can be exchanged for free spins, free bets, and other bonuses in the store. Simply click "Buy" next to your desired addon.</div>
+                </li>
+                <li>
+                    <div class="faq-question">How do I buy bonuses?</div>
+                    <div class="faq-answer">You can purchase bonuses using your casino coins or real money. Select the bonus you want and click "Buy". Follow the instructions to complete your purchase.</div>
+                </li>
+                <li>
+                    <div class="faq-question">How do I earn more coins?</div>
+                    <div class="faq-answer">Complete achievements, participate in promotions, or buy coins directly in the store.</div>
+                </li>
+                <li>
+                    <div class="faq-question">Where can I see my coin balance?</div>
+                    <div class="faq-answer">Your coin balance is displayed in your account dashboard after login.</div>
+                </li>
+            </ul>
+            <script>
+            // FAQ accordion functionality (click only on question, keyboard accessible, JS fallback for answer display)
+            document.addEventListener('DOMContentLoaded', function() {
+                const faqList = document.getElementById('faqList');
+                if (faqList) {
+                    faqList.querySelectorAll('li').forEach(function(item) {
+                        const question = item.querySelector('.faq-question');
+                        const answer = item.querySelector('.faq-answer');
+                        if (question) {
+                            question.setAttribute('tabindex', '0');
+                            question.style.cursor = 'pointer';
+                            question.addEventListener('click', function(e) {
+                                e.stopPropagation();
+                                // Close others
+                                faqList.querySelectorAll('li').forEach(function(li) {
+                                    if (li !== item) {
+                                        li.classList.remove('active');
+                                        const ans = li.querySelector('.faq-answer');
+                                        if (ans) ans.style.display = 'none';
+                                    }
+                                });
+                                // Toggle current
+                                const isActive = item.classList.toggle('active');
+                                if (answer) answer.style.display = isActive ? 'block' : 'none';
+                            });
+                            question.addEventListener('keydown', function(e) {
+                                if (e.key === 'Enter' || e.key === ' ') {
+                                    e.preventDefault();
+                                    question.click();
+                                }
+                            });
+                        }
+                        // On load, ensure all answers are hidden
+                        if (answer) answer.style.display = 'none';
+                    });
+                }
+            });
+            </script>
+        </div>
+    </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-roman-dark border-t border-roman-red/30 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="text-2xl font-bold text-roman-gold mb-4">
+                        <i class="fas fa-crown mr-2"></i>VICIBET
+                    </div>
+                    <p class="text-gray-400 mb-4">L'empire du jeu où chaque gladiateur trouve sa fortune.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-roman-gold font-bold mb-4">Jeux</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="slots.html" class="hover:text-roman-gold transition-colors">Machines à Sous</a></li>
+                        <li><a href="#jeux" class="hover:text-roman-gold transition-colors">Jeux de Table</a></li>
+                        <li><a href="#jeux" class="hover:text-roman-gold transition-colors">Casino en Direct</a></li>
+                        <li><a href="#jeux" class="hover:text-roman-gold transition-colors">Jackpots</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-roman-gold font-bold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#support" class="hover:text-roman-gold transition-colors">Centre d'Aide</a></li>
+                        <li><a href="#support" class="hover:text-roman-gold transition-colors">Chat en Direct</a></li>
+                        <li><a href="#support" class="hover:text-roman-gold transition-colors">Contact</a></li>
+                        <li><a href="#faq" class="hover:text-roman-gold transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-roman-gold font-bold mb-4">Légal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-roman-gold transition-colors">Conditions d'Utilisation</a></li>
+                        <li><a href="privacy.html" class="hover:text-roman-gold transition-colors">Politique de Confidentialité</a></li>
+                        <li><a href="#" class="hover:text-roman-gold transition-colors">Jeu Responsable</a></li>
+                        <li><a href="#" class="hover:text-roman-gold transition-colors">Licences</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-roman-red/30 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">
+                        © 2025 Vicibet Casino. Tous droits réservés.
+                    </p>
+                    <div class="flex items-center space-x-4 text-sm text-gray-400">
+                        <div class="flex items-center">
+                            <i class="fas fa-exclamation-triangle mr-2 text-roman-gold"></i>
+                            <span>Jeu responsable</span>
+                        </div>
+                        <span>|</span>
+                        <span>18+ seulement</span>
+                        <span>|</span>
+                        <span>Conditions de mise s'appliquent</span>
+                    </div>
+                </div>
+                <div class="mt-6 text-center text-sm text-gray-500">
+                    <p class="mb-2">
+                        <strong>Avertissement :</strong> Les conditions de mise s'appliquent à tous les bonus. 
+                        Bonus de bienvenue : mise 35x (bonus + dépôt). Tours gratuits : mise 25x des gains. 
+                        Contribution des jeux variable. Voir conditions complètes.
+                    </p>
+                    <p>
+                        Pour obtenir de l'aide concernant le jeu problématique, contactez : 
+                        <a href="tel:1-866-531-2600" class="text-roman-gold hover:underline">1-866-531-2600</a> ou 
+                        <a href="https://www.responsiblegambling.org" class="text-roman-gold hover:underline">responsiblegambling.org</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
